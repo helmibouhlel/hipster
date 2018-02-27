@@ -1,0 +1,25 @@
+{
+  "generator-jhipster": {
+    "baseName": "newApp",
+    "packageName": "com.app",
+    "packageFolder": "com/app",
+    "authenticationType": "session",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "no",
+    "useSass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "enableTranslation": false,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "b5e593cbd45c2b2e8a5af1633c67deb4fde745b4",
+    "testFrameworks": [
+      "gatling",
+      "protractor"
+    ]
+  }
+}

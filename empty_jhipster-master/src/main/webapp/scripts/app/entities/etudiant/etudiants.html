@@ -1,0 +1,58 @@
+<div>
+    <h2>Etudiants</h2>
+    <jh-alert></jh-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="etudiant.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span 
+                       >Create new Etudiant
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    
+    
+    
+    
+    			<div jarvis-widget id="standard-datatable-widget"
+							data-widget-color="darken" data-widget-editbutton="false">
+							<header>
+								<span class="widget-icon"> <i class="fa fa-table"></i>
+								</span>
+								<h2>Liste des organismes</h2>
+								<div class="widget-toolbar" role="menu" style="float: left;">
+								<div class="badge badge-danger bg-dangerStyle">{{dtInstance.DataTable.page.info().recordsTotal}}</div>
+							</div>
+														<div class="widget-toolbar" role="menu" style="float: left;">
+							
+							<div>
+									
+								</div>
+								</div>
+							</header>
+							<div>
+								
+									<div class="table-responsive">
+
+								<table id="organisme" datatable dt-options="dtOptions" dt-instance="dtInstance"
+									dt-columns="dtColumns"
+									class="table-bordered table-hover" width="100%">
+								</table>
+</div>
+							</div>
+
+
+
+						</div>
+						
+						
+						
+						
+						
+    
+    <uib-pager total-items="totalItems" ng-model="page" ng-change="loadAll()"></uib-pager>
+</div>
