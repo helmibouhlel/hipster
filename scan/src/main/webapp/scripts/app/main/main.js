@@ -18,5 +18,38 @@ angular.module('newappApp')
                 resolve: {
                     
                 }
-            });
+            })
+            .state('scan', {
+                parent: 'site',
+                url: '/scan',
+                data: {
+                    authorities: []
+                },
+                views: {
+                    'content@': {
+                        templateUrl: 'scripts/app/main/scan.html',
+                        controller: 'ScanController'
+                    }
+                },
+                resolve: {
+                    
+                }
+            })
+             .state('scanAngular', {
+                parent: 'site',
+                url: '/scanAngular',
+                data: {
+                    authorities: []
+                },
+                views: {
+                    'content@': {
+                        templateUrl: 'scripts/app/main/scanAngular.html',
+                        controller: 'ScanAngularController'
+                    }
+                },
+                resolve: {
+                    
+                }
+            })
+            ;
     });
